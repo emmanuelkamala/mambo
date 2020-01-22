@@ -6,9 +6,20 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+#gem 'sqlite3', '~> 1.4'
+gem 'pg'
+# Use omniauth-facebook for allowing users to sign in using facebook
+gem 'omniauth-facebook'
+# Use Devise for user sign in
+gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
+# Use Bulma for CSS Framework
+gem 'bulma-rails', '~> 0.8.0'
+# Use Simple for making easier forms
+gem 'simple_form', '~> 5.0', '>= 5.0.1'
+# Use gravatar for easier profile image creation
+gem 'gravatar_image_tag', '~> 1.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -31,6 +42,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+
 end
 
 group :development do
@@ -40,6 +53,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+
 end
 
 group :test do
