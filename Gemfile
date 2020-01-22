@@ -9,7 +9,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 #gem 'sqlite3', '~> 1.4'
 gem 'pg'
 # Use omniauth-facebook for allowing users to sign in using facebook
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '~> 5.0'
 # Use Devise for user sign in
 gem 'devise'
 # Use Puma as the app server
