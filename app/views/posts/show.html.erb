@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <h1 class="title">Show Post</h1>
+
+                    <strong>Post:</strong>
+                    <%= @post.content %><br />
+                    <br />
+
+                    <%= link_to 'Edit', edit_post_path(@post), class: "button is-primary" %> 
+                    <%= link_to 'Back', posts_path, class: "button is-dark" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

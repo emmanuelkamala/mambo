@@ -1,0 +1,39 @@
+
+
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+  <div class="section">
+    <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-4">
+          <h2 class="title is-2">Log in</h2>
+            <div class="field">
+              <div class="control">
+                <%= f.email_field :email, placeholder: 'Email', class: "input is-info", required: true %>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <%= f.password_field :password, placeholder: 'Password', class: "input is-info", required: true %>
+              </div>
+            </div>
+            <div class="field">
+            <div class="control">
+            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %> 
+            </div>
+            </div>
+             
+            <div class="field">
+              <div class="control">
+                <%= f.button :submit, "Log in", class: "button is-info is-medium" %>
+              </div>
+            </div>
+              <%= render "devise/shared/links" %>
+            </div>
+          </div>
+        </div>
+      </div>
+<% end %>
+
+
