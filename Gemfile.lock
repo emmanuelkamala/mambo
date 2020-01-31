@@ -272,11 +272,7 @@ DEPENDENCIES
   gravatar_image_tag (~> 1.2)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
-<<<<<<< HEAD
-  omniauth-facebook (~> 5.0)
-=======
   omniauth-facebook
->>>>>>> 2828bbb6a5d8df9f008f263b61aa88b2da8d30e7
   pg
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
