@@ -19,4 +19,5 @@ Rails.application.routes.draw do
       get '/users/sign_out' => 'devise/sessions#destroy' 
       get '/users/edit' => 'registrations#edit'
   end
+
 end
