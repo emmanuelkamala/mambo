@@ -1,0 +1,21 @@
+<div class="card"  >
+
+     <div class="card-body">
+        <h6 class="card-title text-center"> 
+        <%= gravatar_for @user %>
+          <%= current_user.first_name %> 
+        </h6>
+      </div>
+
+      <ul class="list-group list-group-flush text-center">
+        
+
+        <li class="list-group-item">
+          <small>
+            Joined at <%= time_ago_in_words(current_user.created_at) %> ago. 
+          </small>
+        </li>
+
+      </ul>
+      
+    </div>

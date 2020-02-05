@@ -5,7 +5,7 @@
     <article class="media box">
         <figure class="media-left">
             <p class="image is-64x64">
-            <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.first_name) %>
+              <% gravatar_for @user %>
             </p>
             </figure>
         <div class="media-content">

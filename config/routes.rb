@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'users', to: 'users#index'
   get 'users/show'
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations'}
   resources :posts do
     member do
       get :delete

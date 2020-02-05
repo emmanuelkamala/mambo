@@ -1,0 +1,28 @@
+<div class="columns">
+  <div class="columns is-one-quarter">
+    <%= render 'user_info', user: @user  %>
+  </div>
+
+  <div class="column is-three-quarters">
+    
+    <% if @myposts.empty? %>
+      <div class="text-center">
+        <h4>Congratulation, You are In !!! </h4> 
+        <p>Now try to post Something and make some friend ... </p>
+        <p>One more thing ... </p>
+        <p>Remember to update your profile detail let more people know you!</p>
+      </div>
+    <% end %>
+
+    <div class="p-3">
+      <%= render '/posts/form' %>
+    </div>
+    
+    <hr>
+    <div class="mx-auto">
+      <%= render @myposts %>
+    </div>
+  </div>
+
+
+</div>
