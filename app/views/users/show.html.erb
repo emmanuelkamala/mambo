@@ -1,6 +1,7 @@
 <div class="columns">
-  <div class="columns is-one-quarter">
-    <%= render 'user_info', user: @user  %>
+
+  <div class="columns is-one-quarter myspace">
+    <%= render 'user_info', user: @user %>
   </div>
 
   <div class="column is-three-quarters">
@@ -15,13 +16,13 @@
     <% end %>
 
     <div class="p-3">
-      <%= render '/posts/form' %>
+        <%= render '/posts/form' %>
     </div>
     
     <hr>
     <div class="mx-auto">
-      <%= render @myposts %>
-    </div>
+      <%= @myposts %>
+    </div> 
   </div>
 
 

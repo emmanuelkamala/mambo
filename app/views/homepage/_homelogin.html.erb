@@ -1,16 +1,7 @@
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="login-form">
-
-    
-  <%= f.email_field :email, placeholder: 'Email', class: "input is-info" %>
-  
-  
-  <%= f.password_field :password, placeholder: 'password', class: "input is-info" %>
-  
-      
+    <div class="login-form"> 
+      <%= f.email_field :email, placeholder: 'Email', class: "input is-info" %>
+      <%= f.password_field :password, placeholder: 'password', class: "input is-info" %> 
       <%= f.button :submit, "Log in", class: "button is-info login-top-button" %>
-      
     </div>
-  
-   
-  <% end %>
+<% end %>

@@ -1,0 +1,13 @@
+
+<p class="control">
+    <%= link_to 'Dashboard', posts_path, class: "button is-info is-inverted" %>
+</p>
+<p class="control">
+    <%= link_to current_user.first_name, edit_user_registration_path, class: "button is-info" %>
+</p>
+<p class="control">
+    <%= link_to "Users", users_path, class: "button is-info" %>
+</p>
+<p>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "button is-info" %>
+</p>

@@ -3,8 +3,16 @@
     <%= render 'users/user_info', user: current_user %>
   </div>
 
-  <div class="column is-three-quarters">
-   <%= @users %>
-  </div>
+
+    <% @users.each do |user| %>
+      <div class="card column user-space">
+        <%= gravatar_image_tag(user.email, size: 128, alt: user.first_name) %><br>
+        <%= user.full_name %><br>
+        <small>
+            Joined at <%= time_ago_in_words(user.created_at) %> ago. 
+        </small>
+      </div>
+    <% end %>
+
 
 </div>
