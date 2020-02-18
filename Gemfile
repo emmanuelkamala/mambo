@@ -12,6 +12,8 @@ gem 'pg'
 gem 'omniauth-facebook', '~> 5.0'
 # Use Devise for user sign in
 gem 'devise'
+# Use rubocop for fixing style errors
+gem 'rubocop'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use Bulma for CSS Framework
