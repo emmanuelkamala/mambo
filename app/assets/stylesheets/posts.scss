@@ -1,3 +1,27 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.comment-box {
+    padding: 5px;
+    background: #fff;
+}
+
+.comment {
+    font-size: 14px;
+}
+
+.post-liking {
+    float: right;
+
+    a{
+      color: blue($color: #000000);
+      font-weight: bold;
+      font-size: 0.9em;
+      margin: 0 4px;
+    }
+    .post-date {
+      font-size: 0.6em;
+    }
+  }

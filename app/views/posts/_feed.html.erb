@@ -29,6 +29,10 @@
        
         <p><%= post.content %></p>
         <small class="time"><%= time_ago_in_words(post.created_at) %></small>
+
+        <div class='post-liking'>
+            <%= like_or_dislike_btn(post) %>
+        </div>
     </div>
 
 <% if user_signed_in? && current_user.id == post.user_id %>
@@ -49,6 +53,17 @@
     </div>
   </nav>
 <% end %>
+        
+       <%= render 'posts/comments'  %>
+        <div class="comment-box">
+            <%= form_for @comment do |f| %>
+                <div class="field has-addons">
+                    <%= f.hidden_field :post_id, value: @post.id %>
+                    <%= f.text_field :comment, placeholder: "Add comment here...", class: " input" %>
+                    <%= f.submit "comment", class: " button" %>
+                </div> 
+            <% end %>
+        </div>
  </div>
 </article>
 
