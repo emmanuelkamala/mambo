@@ -2,7 +2,7 @@
 
 This is a facebook clone creation using Ruby on Rails as described from the Odin Project https://www.theodinproject.com/courses/ruby-on-rails/lessons/final-project
 
-![screenshot](./docs/mambo.png)
+![screenshot](https://github.com/emmanuelkamala/mambo/raw/development/docs/mambo.png)
 
 Additional description about the project and its features.
 
