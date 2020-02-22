@@ -40,9 +40,19 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+Style/StringLiterals:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
 
 Layout/HashAlignment:
   EnforcedColonStyle: key
+Layout/IndentationWidth:
+  Enabled: false
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+Layout/TrailingWhitespace:
+  Enabled: false
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
