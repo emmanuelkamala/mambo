@@ -49,12 +49,11 @@
     </div>
   </nav>
 <% end %>
-        
-       <%= render 'posts/comments'  %>
+        <%= render post.comments %>
         <div class="comment-box">
             <%= form_for @comment do |f| %>
                 <div class="field has-addons">
-                    <%= f.hidden_field :post_id, value: @post.id %>
+                    <%= f.hidden_field :post_id, value: post.id %>
                     <%= f.text_field :comment, placeholder: "Add comment here...", class: " input" %>
                     <%= f.submit "comment", class: " button" %>
                     <%= like_or_dislike_btn(post) %>

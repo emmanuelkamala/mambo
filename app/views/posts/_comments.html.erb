@@ -1,6 +1,7 @@
-<% @post.comments.each do |comment| %>
-    <div class="comment">
-        <strong><%= comment.user.first_name %></strong>
-        <%= comment.comment %>
-    </div>
-<% end %>
+
+    <% @post.comments.each do |comment| %>
+        <div class="comment">
+            <strong><%= comment.user.first_name %></strong>
+            <%= comment.comment %>
+        </div>
+    <% end %>

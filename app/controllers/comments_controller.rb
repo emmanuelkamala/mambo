@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
         # @comment = @post.comments.build(params[:comment][:post_id]) 
         # @comment = Comment.new(comment_params)
         # @comment.user_id = current_user.id if user_signed_in?
-        @comment = Comment.new(comment_params)
+        @comment = current_user.comments.build(comment_params)       
         @comment.post_id = params[:post_id]
         @comment.user = current_user
         if @comment.save
