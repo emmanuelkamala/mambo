@@ -25,10 +25,9 @@
 
 <div class="media-content">
     <div class="content">
-        <strong><%= post.user.first_name %> <%= post.user.last_name %></strong><br />
-       
+        <strong><%= link_to post.user.full_name, users_show_path(@user) %></strong><br />
         <p><%= post.content %></p>
-        <small class="time"><%= time_ago_in_words(post.created_at) %></small>
+        <small class="time"><%= time_ago_in_words(post.created_at) %> ago</small>
     </div>
 
 <% if user_signed_in? && current_user.id == post.user_id %>

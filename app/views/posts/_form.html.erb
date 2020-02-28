@@ -1,6 +1,6 @@
 <%= simple_form_for(@post) do |f| %>
-    <%= f.error_notification %>
-      <div class="field">
+  <%= render "devise/shared/error_messages", resource: @post %>
+  <div class="field">
         <div class="control">
      
           <%= f.input :content, label: "Create a post", input_html: {class: "textarea"},

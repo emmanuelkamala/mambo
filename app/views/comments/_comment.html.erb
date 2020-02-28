@@ -1,4 +1,5 @@
 <div class="comment">
-<strong><%= comment.user.first_name %></strong>
+<strong><%= link_to comment.user.first_name, users_show_path(@user) %></strong>
 <%= comment.comment %>
+<small class="time"><%= time_ago_in_words(comment.created_at) %> ago</small>
 </div>
