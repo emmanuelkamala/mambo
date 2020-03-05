@@ -1,0 +1,20 @@
+<div class="columns">
+
+    <div class="column is-one-quarter myspace">
+      <%= render 'user_info', user: @user %>
+    </div>
+
+    <div class="column is-half">
+      <div class="p-3">
+          <%= render 'posts/form' %>
+      </div>
+    </div>
+        
+    <div class="column is-one-quarter myspace">
+      <h2 class="button is-info buttonspace">My Friends</h2><br>
+      <% current_user.friends.each do |u| %>
+          <%= u.full_name %> <%= link_to "Remove Friend", [:friendship, id: u], method: :delete, class: "button is-danger is-small", remote: true if current_user.friends_with?(u) %><br>
+        <% end %>
+    </div> 
+   
+</div>

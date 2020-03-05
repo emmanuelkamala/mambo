@@ -1,0 +1,22 @@
+<div class="column is-one-quarter">
+    <nav class="panel">
+        <p class="panel-heading">Profile</p>
+            <div class="panel-block">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                        <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.first_name) %>
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong><%= current_user.first_name %></strong><br />
+                                <small><%= current_user.last_name %></small>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </nav>
+</div>

@@ -1,0 +1,23 @@
+<div class="columns">
+  <div class="column is-one-quarter">
+    <%= render 'users/user_info', user: current_user %>
+  </div>
+
+
+  <div class="column is-half">
+    <table class='table table-condensed'>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'friendships/friend', collection: @users, as: :user %>
+    </tbody>
+  </table>
+  </div>
+
+</div>

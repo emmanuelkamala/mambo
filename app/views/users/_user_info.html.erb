@@ -1,0 +1,20 @@
+<div class="card myuserspace"  >
+
+     <div class="card-body ">
+        <h6 class="card-title text-center"> 
+          <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.first_name) %><br>
+          <%= current_user.full_name %> <br>
+          <%= link_to "Edit profile", edit_user_registration_path %>
+        </h6>
+      </div>
+
+      <ul class="list-group list-group-flush text-center">
+        <li class="list-group-item">
+          <small>
+            Joined at <%= time_ago_in_words(current_user.created_at) %> ago. 
+          </small>
+        </li>
+
+      </ul>
+      
+    </div>

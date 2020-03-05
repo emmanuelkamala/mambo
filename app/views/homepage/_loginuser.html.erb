@@ -1,0 +1,43 @@
+
+ 
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource)) do |f| %>
+    <%= f.error_notification %>
+    <div class="field">
+    <div class="control">
+    <%= f.text_field :first_name, placeholder: 'First Name', class: "input is-info", required: true %>
+    </div>
+    </div>
+
+    <div class="field">
+    <div class="control">
+    <%= f.text_field :last_name, placeholder: 'Last Name', class: "input is-info", required: true %>
+    </div>
+    </div>
+
+    <div class="field">
+    <div class="control">
+    <%= f.email_field :email, placeholder: 'Email', class: "input is-info", required: true %>
+    </div>
+    </div>
+
+    <div class="field">
+    <div class="control">
+    <%= f.password_field :password, placeholder: 'Password', class: "input is-info", required: true %>
+    </div>
+    </div>
+
+    <div class="field">
+    <div class="control">
+    <%= f.password_field :password_confirmation, placeholder: 'Password Confirmation', class: "input is-info", required: true%>
+    </div>
+    </div>
+
+   <div class="field">
+   <div class="control">
+   <%= f.button :submit, "Sign up", class: "button is-success is-medium" %>
+   <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "button is-info is-medium" %>
+
+   </div>
+
+   </div>
+<% end %>

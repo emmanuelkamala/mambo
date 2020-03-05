@@ -1,0 +1,90 @@
+// Place all the styles related to the homepage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main {
+    background-color: rgb(230, 238, 255) !important;
+    padding-bottom: 100px;
+}
+
+.notification:not(:last-child) {
+    margin-bottom: 0 !important;
+ }
+
+ .time {
+     color: rgb(197, 197, 197);
+     font-size: 0.8rem;
+ }
+
+.navbar {
+    background-color: #4267B2 !important;
+    height: 70px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.info {
+    padding: 0 80px;
+}
+
+.login-top-button {
+    margin-left:10px;
+    margin-right: 30px;
+}
+
+.navbar-brand {
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar-brand .title {
+    color: white;
+    font-size: 2.2rem !important;
+    letter-spacing: -1px;
+   
+}
+
+.title .is-5 .big {
+    font-size: 2rem;
+   
+}
+
+.home1 {
+    margin-top: 60px;
+}
+
+.home1 h1 {
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+    
+}
+
+.space {
+    padding-right: 10px;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.pic {
+    padding-right: 15px;
+}
+
+.home2 h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.home2 h2 {
+    font-size: 1.4rem;
+}
+
+.login-form {
+    display: flex;
+    font-size: 1.2em;
+  }

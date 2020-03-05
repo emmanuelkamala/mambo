@@ -1,0 +1,52 @@
+
+ <br />
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+
+  <div class="section">
+    <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-4">
+          <h2 class="title is-2">Sign Up</h2>
+
+          <div class="field">
+            <div class="control">
+              <%= f.text_field :first_name, placeholder: 'First Name', class: "input is-info", required: true %>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <%= f.text_field :last_name, placeholder: 'Last Name', class: "input is-info", required: true %>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <%= f.email_field :email, placeholder: 'Email', class: "input is-info", required: true %>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <%= f.password_field :password, placeholder: 'Password', class: "input is-info", required: true %>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <%= f.password_field :password_confirmation, placeholder: 'Password Confirmation', class: "input is-info", required: true%>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <%= f.button :submit, "Sign up", class: "button is-info is-medium" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+<% end %>
