@@ -1,29 +1,20 @@
 <div class="columns">
 
-  <div class="columns is-one-quarter myspace">
-    <%= render 'user_info', user: @user %>
-  </div>
-
-  <div class="column is-three-quarters">
-    
-    <% if @myposts.empty? %>
-      <div class="text-center">
-        <h4>Congratulation, You are In !!! </h4> 
-        <p>Now try to post Something and make some friend ... </p>
-        <p>One more thing ... </p>
-        <p>Remember to update your profile detail let more people know you!</p>
-      </div>
-    <% end %>
-
-    <div class="p-3">
-        <%= render '/posts/form' %>
+    <div class="column is-one-quarter myspace">
+      <%= render 'user_info', user: @user %>
     </div>
-    
-    <hr>
-    <div class="mx-auto">
-      <%= @myposts %>
+
+    <div class="column is-half">
+      <div class="p-3">
+          <%= render 'posts/form' %>
+      </div>
+    </div>
+        
+    <div class="column is-one-quarter myspace">
+      <h2 class="button is-info buttonspace">My Friends</h2><br>
+      <% current_user.friends.each do |u| %>
+          <%= u.full_name %> <%= link_to "Remove Friend", [:friendship, id: u], method: :delete, class: "button is-danger is-small", remote: true if current_user.friends_with?(u) %><br>
+        <% end %>
     </div> 
-  </div>
-
-
+   
 </div>
