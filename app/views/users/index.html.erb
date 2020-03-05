@@ -4,15 +4,20 @@
   </div>
 
 
-    <% @users.each do |user| %>
-      <div class="card column user-space">
-        <%= gravatar_image_tag(user.email, size: 128, alt: user.first_name) %><br>
-        <%= user.full_name %><br>
-        <small>
-            Joined at <%= time_ago_in_words(user.created_at) %> ago. 
-        </small>
-      </div>
-    <% end %>
-
+  <div class="column is-half">
+    <table class='table table-condensed'>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'friendships/friend', collection: @users, as: :user %>
+    </tbody>
+  </table>
+  </div>
 
 </div>
