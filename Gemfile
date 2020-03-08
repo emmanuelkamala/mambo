@@ -10,8 +10,8 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'pg'
 # Use omniauth-facebook for allowing users to sign in using facebook
 gem 'omniauth-facebook', '~> 5.0'
-# Use figaro for hiding credentials
-gem 'figaro'
+# Use dotenv for hiding credentials
+gem 'dotenv-rails'
 # Use Devise for user sign in
 gem 'devise'
 # Use rubocop for fixing style errors
