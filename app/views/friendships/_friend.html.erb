@@ -8,4 +8,7 @@
         <%= link_to 'Remove Request', [:friendship, id: user], method: :delete, class: "button is-warning is-small", remote: true if current_user.pending_friends_with?(user) %>
         <%= link_to 'Remove Friend', [:friendship, id: user], method: :delete, class: "button is-danger is-small", remote: true if current_user.friends_with?(user) %>
     </td>
+    <td>
+        <%= link_to 'Remove Request', [:friendship, id: user], method: :delete, class: "button is-warning is-small", remote: true if current_user.pending_friends_with?(user) %>
+    </td>
 <% end %>
