@@ -6,8 +6,6 @@ This is a facebook clone creation using Ruby on Rails as described from the Odin
 ![screenshot](https://github.com/emmanuelkamala/mambo/raw/development/docs/2.png)
 
 
-Additional description about the project and its features.
-
 ## Built With
 
 - Ruby '~>2.7'
