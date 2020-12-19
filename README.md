@@ -42,7 +42,7 @@ Clone the repo and then install the needed gems:
  rails server
 
 
-## Authors
+## Author
 
 👤 **Author**
 
