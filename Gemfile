@@ -17,7 +17,7 @@ gem 'devise'
 # Use rubocop for fixing style errors
 gem 'rubocop'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Use Bulma for CSS Framework
 gem 'bulma-rails', '~> 0.8.0'
 # Use Simple for making easier forms
